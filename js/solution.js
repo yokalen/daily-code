@@ -17,3 +17,9 @@ const sequenceSum = (begin, end, step) => {
   const result = sequence.reduce((a,b) => a + b, 0)
   return result;
 };
+
+console.log(sequenceSum(2,2,2), 2)
+console.log(sequenceSum(2,6,2), 12)
+console.log(sequenceSum(1,5,1), 15)
+console.log(sequenceSum(1,5,3), 5)
+console.log(sequenceSum(0,7,2), 12)
