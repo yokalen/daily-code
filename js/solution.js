@@ -8,5 +8,12 @@
 
 const sequenceSum = (begin, end, step) => {
   // starting with begin, create sequence by step until end
+  let sequence = []
+  
+  for (let i = begin; i <= end; i+= step){
+    sequence.push(i)
+  }
   // reduce the sequence to sum
+  const result = sequence.reduce((a,b) => a + b, 0)
+  return result;
 };
